@@ -1,7 +1,11 @@
 import { Card } from './components/Card'
 
 function App() {
-    return <Card />
+    return (
+        <div>
+            <Card />
+        </div>
+    )
 }
 
 export default App
