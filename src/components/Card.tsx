@@ -38,6 +38,7 @@ const Container = styled.div`
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 0.2em 1em #3829e067;
+    max-width: 440px;
 `
 
 const Image = styled.img`
@@ -72,7 +73,9 @@ const PlanContainer = styled.div`
 const PriceContainer = styled.div`
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
     width: 80%;
     border-radius: 1em;
     background-color: ${colors.very_pale_blue};
@@ -94,6 +97,10 @@ const Link = styled.a`
     color: ${colors.bright_blue};
     font-weight: 700;
     font-size: 0.8em;
+    &:hover {
+        text-decoration: none;
+        color: rgba(56, 41, 224, 0.6);
+    }
 `
 
 const Button = styled.button`
@@ -103,12 +110,16 @@ const Button = styled.button`
     border-radius: 0.8em;
     margin-top: 2em;
     margin-bottom: 1.5em;
-    color: ${colors.pale_blue};
+    color: #fff;
     background-color: ${colors.bright_blue};
     font-family: 'Red Hat Display';
     font-weight: 900;
     font-size: 1em;
     box-shadow: 0 0.5em 2em #3829e067;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(56, 41, 224, 0.6);
+    }
 `
 
 const CancelButton = styled.a`
@@ -116,4 +127,7 @@ const CancelButton = styled.a`
     font-weight: 900;
     text-decoration: none;
     margin-bottom: 2em;
+    &:hover {
+        color: ${colors.dark_blue};
+    }
 `
