@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import bgImage from '../assets/img/illustration-hero.svg'
 import IconMusic from '../assets/img/icon-music.svg'
 import { colors } from '../helpers/colors'
+import { breakpoint } from '../helpers/breakpoints'
 
 export const Card = () => {
     return (
@@ -51,6 +52,9 @@ const Title = styled.h1`
     font-weight: 900;
     margin-bottom: 0;
     margin-top: 1.6em;
+    @media screen and (min-width: ${breakpoint.desktop}) {
+        font-size: 2em;
+    }
 `
 
 const Text = styled.p`
